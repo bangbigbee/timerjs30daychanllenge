@@ -1,0 +1,20 @@
+body {
+    background: green;
+}
+
+.display {
+    flex: 1;
+    border: black;
+    margin: auto;
+    background-color: orange;
+}
+
+.display-time-left {
+    border: 1px black;
+    background-color: aqua;
+}
+
+.diplay-end-time {
+    border: 1px orange;
+    background-color: yellow;
+}

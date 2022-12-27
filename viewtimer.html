@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styletimer.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="timer">
+
+        <input id="inputMinute" type="text" name="minutes" placeholder="Enter minutes">
+        <button type="button" onclick="myFunction()">Start</button>
+        <div class="display">
+            <h1 id="test" class="display-time-left">Time left</h1>
+            <p class="display-end-time">End time</p>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            var inputval = document.getElementById("inputMinute").value;
+            document.getElementById("test").innerHTML += ":" + inputval;
+            console.log(inputval);
+        }
+    </script>
+</body>
+
+</html>
