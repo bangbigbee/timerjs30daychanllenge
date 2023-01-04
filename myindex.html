@@ -5,27 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styletimer.css">
+    <link rel="stylesheet" href="mystyle.css">
     <title>Document</title>
 </head>
 
 <body>
     <div class="timer">
-
-        <input id="inputMinute" type="text" name="minutes" placeholder="Enter minutes">
-        <button type="button" onclick="myFunction()">Start</button>
+        <div class="timer__controls">
+            <form name="customForm" id="custom">
+                <input type="text" name="minutes" placeholder="Enter Minutes">
+            </form>
+        </div>
         <div class="display">
-            <h1 id="test" class="display-time-left">Time left</h1>
-            <p class="display-end-time">End time</p>
+            <h1 class="display__time-left">Your timer is ready...</h1>
+            <p class="display__end-time"></p>
         </div>
     </div>
-    <script>
-        function myFunction() {
-            var inputval = document.getElementById("inputMinute").value;
-            document.getElementById("test").innerHTML += ":" + inputval;
-            console.log(inputval);
-        }
-    </script>
+    <script src="myscript.js"> </script>
 </body>
 
 </html>
